@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.burger'),n=document.getElementById('nav');if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});}});
