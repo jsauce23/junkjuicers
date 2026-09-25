@@ -27,3 +27,9 @@ document.addEventListener('DOMContentLoaded',function(){
   window.JJinit(document);
 });
 })();
+/* GA4 events: phone taps and form submissions */
+(function(){
+  function ev(n,p){if(typeof window.gtag==='function')window.gtag('event',n,p||{});}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)ev('phone_call_click',{link_text:(a.textContent||'').trim(),page_path:location.pathname});});
+  document.addEventListener('submit',function(e){var f=e.target;if(f&&f.getAttribute('name'))ev('generate_lead',{form_name:f.getAttribute('name'),page_path:location.pathname});},true);
+})();

@@ -320,3 +320,13 @@ h1,h2{-webkit-mask-image:var(--wear);mask-image:var(--wear);-webkit-mask-size:26
 .util{background-image:var(--grain)}
 .skyline-bg svg g{fill:#dcdad4}
 .sticker circle:first-child{stroke:var(--orange);stroke-width:3}
+/* photos */
+.photo{margin:0;position:relative;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--orange);background:var(--mist);overflow:hidden}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:3/2;filter:contrast(1.05) saturate(.92)}
+.photo figcaption{position:absolute;left:0;bottom:0;background:var(--ink);color:#fff;font-family:var(--head);font-weight:900;text-transform:uppercase;letter-spacing:.04em;font-size:18px;padding:9px 14px 7px;border-top:3px solid var(--orange);border-right:3px solid var(--orange)}
+.gallery{display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:1fr 1fr;gap:28px}
+.gallery .g-big{grid-row:span 2}
+.gallery .g-big img{aspect-ratio:auto;height:100%}
+.gallery .photo:not(.g-big){box-shadow:8px 8px 0 var(--ink)}
+@media (max-width:900px){.gallery{grid-template-columns:1fr;grid-template-rows:auto}.gallery .g-big{grid-row:auto}.gallery .g-big img{aspect-ratio:3/2}}
+.sticky-photo{position:sticky;top:110px}
