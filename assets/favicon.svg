@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="8" fill="#141414"/><text x="32" y="45" text-anchor="middle" font-family="Impact,Arial Narrow,sans-serif" font-size="34" font-weight="900" fill="#fff">J<tspan fill="#FF5A00">J</tspan></text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect width="64" height="64" rx="12" fill="#141414"/>
+<rect x="3" y="3" width="58" height="58" rx="9" fill="none" stroke="#FF5A00" stroke-width="2"/>
+<path fill="#fff" d="M9 12H30V40Q30 53 17 53H9V44H16Q20 44 20 40V20H9Z"/>
+<path fill="#FF5A00" d="M34 12H55V40Q55 53 42 53H34V44H41Q45 44 45 40V20H34Z"/>
+<rect x="18" y="29" width="14" height="3" fill="#141414"/>
+<rect x="43" y="29" width="14" height="3" fill="#141414"/>
+<path fill="#FF5A00" d="M38 53v3q0 3.2-1.9 5.2q-1.9-2-1.9-5.2v-3z"/>
+</svg>
