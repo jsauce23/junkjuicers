@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thank-you/
 
-Sitemap: https://junkjuicers.com/sitemap.xml
+Sitemap: https://www.junkjuicers.com/sitemap.xml
