@@ -26,8 +26,7 @@ body{background:var(--ink);color:#fff;font-family:Archivo,Arial,sans-serif;displ
   padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
 body::before,body::after{content:"";display:block;height:14px;background:var(--stripe);flex:none}
 main{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:760px;width:100%;margin:0 auto;padding:48px 24px}
-.logo{font-family:"Big Shoulders Stencil Display",Impact,sans-serif;font-weight:900;line-height:.86;font-size:44px;letter-spacing:.02em;margin:0 0 44px}
-.logo span{display:block}.logo .j2{color:var(--orange);border-top:4px solid #fff;padding-top:4px;display:inline-block}
+.logo{display:block;width:min(380px,80vw);height:auto;margin:0 0 40px}
 h1{font-family:"Big Shoulders Stencil Display",Impact,sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(64px,15vw,150px);line-height:.86;margin:0 0 20px}
 h1 em{font-style:normal;color:var(--orange)}
 p{font-size:19px;color:#cfcfcf;max-width:46ch;margin:0 0 40px;line-height:1.55}
@@ -39,7 +38,7 @@ button{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;tex
 button:active{transform:translate(4px,4px);box-shadow:none}
 .err{width:100%;color:var(--orange);font-weight:700;margin:4px 0 0;font-size:15px}
 </style></head><body><main>
-<div class="logo" aria-label="Junk Juicers"><span>JUNK</span><span class="j2">JUICERS</span></div>
+<img class="logo" src="/assets/img/logo-640.webp" srcset="/assets/img/logo-640.webp 1x, /assets/img/logo-1200.webp 2x" width="380" height="177" alt="Junk Juicers Junk Removal, Texas Strong">
 <h1>Coming <em>soon.</em></h1>
 <p>Something fresh is being squeezed. San Antonio's toughest junk removal crew is almost ready to haul.</p>
 <form method="POST" action="/__unlock">

@@ -330,3 +330,10 @@ h1,h2{-webkit-mask-image:var(--wear);mask-image:var(--wear);-webkit-mask-size:26
 .gallery .photo:not(.g-big){box-shadow:8px 8px 0 var(--ink)}
 @media (max-width:900px){.gallery{grid-template-columns:1fr;grid-template-rows:auto}.gallery .g-big{grid-row:auto}.gallery .g-big img{aspect-ratio:3/2}}
 .sticky-photo{position:sticky;top:110px}
+.site-logo{display:block;height:auto;width:152px}
+.top .wrap{height:84px}
+.foot .site-logo{width:280px;max-width:100%}
+@media (max-width:420px){.top .site-logo{width:128px}}
+.top .site-logo{width:172px}
+.top .wrap{height:92px}
+@media (max-width:420px){.top .site-logo{width:140px}.top .wrap{height:80px}}
