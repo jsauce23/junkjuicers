@@ -88,5 +88,5 @@ export default async (request, context) => {
 
 export const config = {
   path: "/*",
-  excludedPath: ["/assets/*", "/favicon.ico", "/apple-touch-icon.png", "/site.webmanifest", "/robots.txt"],
+  excludedPath: ["/assets/*", "/favicon.ico", "/apple-touch-icon.png", "/site.webmanifest", "/robots.txt", "/thank-you", "/thank-you/"],
 };
