@@ -36,6 +36,7 @@ input{flex:1;min-width:180px;font:inherit;font-size:16px;padding:14px;border:2px
 input:focus{outline:none;border-color:var(--orange)}
 button{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.05em;font-size:19px;padding:0 22px;border:3px solid var(--orange);background:var(--orange);color:#141414;cursor:pointer;box-shadow:4px 4px 0 #fff}
 button:active{transform:translate(4px,4px);box-shadow:none}
+.pw{text-align:center;color:#8a8a8a;font-size:13px;padding:14px 24px 16px}
 .err{width:100%;color:var(--orange);font-weight:700;margin:4px 0 0;font-size:15px}
 </style></head><body><main>
 <img class="logo" src="/assets/img/logo-640.webp" srcset="/assets/img/logo-640.webp 1x, /assets/img/logo-1200.webp 2x" width="380" height="177" alt="Junk Juicers Junk Removal, Texas Strong">
@@ -47,7 +48,7 @@ button:active{transform:translate(4px,4px);box-shadow:none}
 <button type="submit">Let me in</button>
 ${error ? '<p class="err" role="alert">Wrong password. Try again.</p>' : ""}
 </form>
-</main></body></html>`;
+</main><footer class="pw">Powered by JRNEE Technologies LLC</footer></body></html>`;
   return new Response(html, {
     status: 200,
     headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store", "x-robots-tag": "noindex, nofollow" },
