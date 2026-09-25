@@ -1,3 +1,7 @@
+[build]
+  publish = "."
+  edge_functions = "netlify/edge-functions"
+
 [[headers]]
   for = "/assets/*"
   [headers.values]
