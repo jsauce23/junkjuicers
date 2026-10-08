@@ -419,3 +419,36 @@ html[data-theme="dark"] .theme-toggle{background:transparent;color:var(--txt);bo
 html[data-theme="dark"] .theme-toggle .tt-sun{display:block}
 html[data-theme="dark"] .theme-toggle .tt-moon{display:none}
 
+
+/* ===== curbside promo, story, curb checkbox, hours ===== */
+.promo{position:relative;background:var(--orange);color:#141414;padding:70px 0}
+.promo::before,.promo::after{content:"";position:absolute;left:0;right:0;height:10px;background:repeating-linear-gradient(-45deg,#141414 0 12px,var(--orange) 12px 24px)}
+.promo::before{top:0}.promo::after{bottom:0}
+.promo-inner{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.promo-big{font-family:var(--head);font-weight:900;line-height:.8;font-size:clamp(130px,17vw,230px);letter-spacing:-.02em;-webkit-mask-image:var(--wear);mask-image:var(--wear);-webkit-mask-size:260px;mask-size:260px}
+.promo-big span{font-size:.55em;vertical-align:top}
+.promo-big small{display:block;font-size:.34em;letter-spacing:.12em;margin-top:6px}
+.promo h2{color:#141414}
+.promo .lede{color:#2a1200}
+.promo .btn{background:#141414;border-color:#141414;color:#fff;box-shadow:4px 4px 0 #fff}
+.promo .btn-line{background:transparent;color:#141414;border-color:#141414}
+.promo .btn-line::before{background:linear-gradient(#141414,#141414) 0 12px/100% 100% no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 12'%3E%3Cpath d='M0 6 Q10 0 20 6 T40 6 V12 H0Z' fill='%23141414'/%3E%3C/svg%3E") 0 0/40px 12px repeat-x}
+.promo .btn-line:hover{color:#fff;border-color:#141414}
+.promo-fine{font-size:14px;font-weight:600;color:#3a1a00;margin:16px 0 0}
+@media (max-width:760px){.promo-inner{grid-template-columns:1fr;gap:20px}}
+.story{margin:0;padding:6px 0 6px 24px;border-left:6px solid var(--orange);font-size:19px;line-height:1.65;font-style:italic}
+.story p{margin:0}
+.story-by{font-family:var(--head);font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--orange);margin:20px 0 0 30px}
+.form .curb{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;cursor:pointer;margin:2px 0}
+.form .curb input{width:20px;height:20px;padding:0;accent-color:var(--orange);flex:none}
+.form .curb b{color:var(--orange-dk)}
+.foot-hours{margin:10px 0 0;color:#bdbdbd}
+.util-sep{color:var(--orange);margin:0 6px}
+html[data-theme="dark"] .promo{background:var(--orange);color:#141414}
+html[data-theme="dark"] .promo .lede{color:#2a1200}
+html[data-theme="dark"] .promo .btn{background:#141414;border-color:#141414;color:#fff;box-shadow:4px 4px 0 #000}
+html[data-theme="dark"] .promo .btn-line{background:transparent;color:#141414;border-color:#141414}
+html[data-theme="dark"] .promo .btn-line:hover{color:#fff;border-color:#141414}
+html[data-theme="dark"] .form .curb{color:var(--txt)}
+html[data-theme="dark"] .form .curb b{color:var(--orange)}
+html[data-theme="dark"] .story{color:#E3E3E1}
